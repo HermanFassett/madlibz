@@ -19,8 +19,8 @@ $else:
                    var v = madlibs.value[i].toString();
                    var b = (madlibs.blanks[i]) ? madlibs.blanks[i].toString() : "";
                    html += "<input type='hidden' value='"+ v.replace("'", "\\'") + "' name='v" + i + "'/>" +
-                   v.replace("\n", "<br/>") + 
-                    (b !== "" ? "<input class='form-control' type='text' name='b" + i + "' placeholder='" + madlibs.blanks[i] + "'/>" : "");
+                    b.charAt(0) + b.slice(1) + 
+                    (b !== "" ? "<input class='form-control' type='text' name='b" + i + "' placeholder='" + b + "'/>" : "");
                }
                html += "<br/><input type='submit' class='btn btn-primary' value='Submit'/></submit>";
                jQuery("#game").html(html);
