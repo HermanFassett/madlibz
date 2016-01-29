@@ -1,5 +1,4 @@
 <div class="container">
-	
 	<div class="jumbotron text-center">
 		<div class="page-header">
 	  		<h1>Madlibz API</hi>
@@ -8,14 +7,14 @@
 	<div class="row">
 		<div class="col-md-3">
 			<ul class="nav nav-pills nav-stacked">
-				<li role="presentation" class="active"><a href="#template">Template Generator</a></li>
+				<li role="presentation" class="active"><a href="#api">API Url and Queries</a></li>
 				<li role="presentation"><a href="#examples">Example Calls</a></li>
 				<li role="presentation"><a href="#help">Help</a></li>
 			</ul>
 		</div>
 		<div class="col-md-9">
 			<div class="page-header">
-		  		<h2 id="template">Get a Random Madlib Template</h2>
+		  		<h2 id="api">Get a Random Madlib Template</h2>
 			</div>
 			The base url to get a random madlib template, is as follows:<br>
 			<code>
@@ -94,6 +93,23 @@
 			<div class="page-header">
 		  		<h2 id="help">Help</h2>
 			</div>
+			<p><b>Find an error?</b> Report it here: <a href="https://github.com/HermanFassett/madlibz/issues">https://github.com/HermanFassett/madlibz/issues</a></p>
+			<p><b>Want to add a Madlibs to the API?</b></p>
+			<p>Edit this JSON file here: <a href="https://github.com/HermanFassett/madlibz/blob/master/data/templates.json">https://github.com/HermanFassett/madlibz/blob/master/data/templates.json</a></p>
+			<p>The format of the file is as follows:</p>
+			<pre>{
+    "templates": [...]
+}</pre>
+			<p>To add your own Madlibs to the file, you need to put it in the "templates" array in the following format:</p>
+			<pre>
+{
+    "title": "Your Madlibs Title",
+    "blanks": ["name", "verb"],
+    "value": ["Hello ", " what are you ", " doing?", 0]
+}</pre>
+		<p>Where <b>title</b> is the name of your Madlibs, <b>blanks</b> contains <b>in order</b> the input types the user will need to do, and <b>value</b> contains the actual text of the Madlibs, split as an array 
+		wherever a blank is, and ending with a 0 (non string). Don't forget to include the spaces in these values. The 0 is there mostly for the one word example of Hello _____ noun. It shouldn't matter where in the 
+		json file you put your Madlibs, but please do put it at the end, and make sure, in proper json style, that the previous sample has a comma after it!!!</p>
 		</div>
 	</div>
 </div>

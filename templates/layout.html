@@ -4,9 +4,24 @@ $def with (content)
 <head>
     <title>Madlibz API</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/journal/bootstrap.min.css"/>
+    <style>
+        footer {
+            margin-top: 50px;
+            padding-top: 15px;
+            border-top: 1px solid #EEE;
+        }
+    </style>
 </head>
 <body>
     $:content
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <p class="text-muted">&copy; <script>document.write(new Date().getFullYear())</script> Herman Fassett</p>
+                <p><a href="https://github.com/HermanFassett/madlibz">View on GitHub</a></p>
+            </div>
+        </div>
+    </footer>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 </html>
