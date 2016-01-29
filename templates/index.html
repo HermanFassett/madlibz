@@ -32,7 +32,7 @@ $else:
                         if (b.substr(0,2).match(/[aeiou][^\sn]/)) {
                             html += "an ";
                         }
-                        else if (!b.substr(0,2).match(/[aeiou]\s/)) {
+                        else if (!b.substr(0,2).match(/[aeiou][\sn]/)) {
                             html += "a ";
                         }
                         html +=  b.replace("'", "&#39;") + "'/></div>";
