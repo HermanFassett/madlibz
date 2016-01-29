@@ -3,6 +3,7 @@ import os
 import web
 import json
 import random
+from flask import Flask
 
 # Set urls
 urls = (
@@ -59,4 +60,5 @@ class madlibCall(object):
 			return json.dumps({"error": "Invalid API call"})
        
 if __name__ == "__main__":
-	app.run()
+	port = int(os.environ.get('PORT', 5000))
+	app.run(host='0.0.0.0', port=port)
