@@ -18,7 +18,17 @@ render = web.template.render('templates/', base="layout")
 # / Route
 class index(object):
 	def GET(self):
-		return render.index()
+		return render.index(output = "")
+	
+	def POST(self):
+		form = web.input()
+		output = ""
+		for i in range(0, len(form)/2):
+			v = "v" + str(i);
+			b = "b" + str(i);
+			print form[v], form[b]
+			output += form[v] + form[b]
+		return render.index(output = output)
 		
 # /api route
 class api(object):

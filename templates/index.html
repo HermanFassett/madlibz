@@ -1,1 +1,28 @@
-<h1>Hello World!</h1>
+$def with (output)
+$if output != "":
+    <div class="container">
+        <h4>$output</h4>
+        <a href="/" class="btn btn-primary">New Madlibs</a>
+    </div>
+$else:
+    <div class="container">
+        <div id="game"></div>
+    </div>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            var url = "//madlibz.herokuapp.com/api/random"; // Remove http to get rid of blocked content problem
+            jQuery.getJSON(url, function(data) {
+               var madlibs = data;
+               var html = "<form method='post'>";
+               for (var i = 0; i < madlibs.value.length - 1; i++) {
+                   html += "<input type='hidden' value='"+ madlibs.value[i] + "' name='v" + i + "'/>" +
+                   madlibs.value[i].toString().replace("\n", "<br/>") + 
+                    (madlibs.blanks[i] ? "<input class='form-control' type='text' name='b" + i + "' placeholder='" + madlibs.blanks[i] + "'/>" : "");
+               }
+               html += "<br/><input type='submit' class='btn btn-primary' value='Submit'/></submit>";
+               jQuery("#game").html(html);
+               console.log(madlibs);
+            });
+        });
+    </script>
