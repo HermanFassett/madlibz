@@ -16,9 +16,11 @@ $else:
                var madlibs = data;
                var html = "<form method='post'>";
                for (var i = 0; i < madlibs.value.length - 1; i++) {
-                   html += "<input type='hidden' value='"+ madlibs.value[i] + "' name='v" + i + "'/>" +
-                   madlibs.value[i].toString().replace("\n", "<br/>") + 
-                    (madlibs.blanks[i] ? "<input class='form-control' type='text' name='b" + i + "' placeholder='" + madlibs.blanks[i] + "'/>" : "");
+                   var v = madlibs.value[i].toString();
+                   var b = (madlibs.blanks[i]) ? madlibs.blanks[i].toString() : "";
+                   html += "<input type='hidden' value='"+ v.replace("'", "\\'") + "' name='v" + i + "'/>" +
+                   v.replace("\n", "<br/>") + 
+                    (b !== "" ? "<input class='form-control' type='text' name='b" + i + "' placeholder='" + madlibs.blanks[i] + "'/>" : "");
                }
                html += "<br/><input type='submit' class='btn btn-primary' value='Submit'/></submit>";
                jQuery("#game").html(html);
