@@ -1,26 +1,31 @@
-$def with (output)
+$def with (output, title)
 $if output != "":
     <div class="container">
-        <h4>$output</h4>
-        <a href="/" class="btn btn-primary">New Madlibs</a>
+        <div class="page-header">
+          <h1 class="text-center">$title</h1>
+        </div>
+        <blockquote><h4 class="text-center output">$output</h4></blockquote>
+        <a href="/" class="btn btn-primary text-center">New Madlibs</a>
     </div>
 $else:
     <div class="container">
         <div id="game"></div>
     </div>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript">
         jQuery(document).ready(function() {
             var url = "//madlibz.herokuapp.com/api/random"; // Remove http to get rid of blocked content problem
             jQuery.getJSON(url, function(data) {
                var madlibs = data;
-               var html = "<form method='post'>";
+               var html = "<form method='post'><input name='title' type='hidden' value='" + madlibs.title.toString().replace("'", "&#39;") + "'/>";
+
                for (var i = 0; i < madlibs.value.length - 1; i++) {
                    var v = madlibs.value[i].toString();
                    var b = (madlibs.blanks[i]) ? madlibs.blanks[i].toString() : "";
-                   html += "<input type='hidden' value='"+ v.replace("'", "\\'") + "' name='v" + i + "'/>" +
-                    b.charAt(0) + b.slice(1) + 
-                    (b !== "" ? "<input class='form-control' type='text' name='b" + i + "' placeholder='" + b + "'/>" : "");
+                   html += "<input type='hidden' value='"+ v.replace("'", "&#39;") + "' name='v" + i + "'/>" +
+                    (b !== "" ? "<div class='input-group'> <span class='input-group-addon'>" + b.charAt(0).toUpperCase() + b.slice(1) +
+                      "</span>" +
+                      "<input class='form-control' type='text' name='b" + i + "' placeholder='Enter " +
+                      (b.substr(0,2).match(/[aeiou]\s/) ? "" : b.substr(0,2).match(/[aeiou][^\s]/) ? "an " : "a ") + b.replace("'", "&#39;") + "'/></div>" : "");
                }
                html += "<br/><input type='submit' class='btn btn-primary' value='Submit'/></submit>";
                jQuery("#game").html(html);

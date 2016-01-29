@@ -18,23 +18,26 @@ render = web.template.render('templates/', base="layout")
 # / Route
 class index(object):
 	def GET(self):
-		return render.index(output = "")
-	
+		return render.index(output = "", title = "")
+
 	def POST(self):
 		form = web.input()
 		output = ""
+		title = form["title"]
 		for i in range(0, len(form)/2):
-			v = "v" + str(i);
-			b = "b" + str(i);
-			print form[v], form[b]
-			output += form[v] + form[b]
-		return render.index(output = output)
-		
+			v = "v" + str(i) if "v" + str(i) in form else ""
+			b = "b" + str(i)
+			if v in form:
+				output += form[v]
+			if b in form:
+				output += form[b]
+		return render.index(output = output, title = title)
+
 # /api route
 class api(object):
 	def GET(self):
 		return render.api()
-		
+
 # /api/random route
 class madlibCall(object):
 	def GET(self, type):
@@ -49,7 +52,7 @@ class madlibCall(object):
 			i = web.input(maxlength="100", minlength="0")
 			maxlength = 100
 			minlength = 0
-			# Convert 
+			# Convert
 			if i["maxlength"].isdigit():
 				maxlength = int(i["maxlength"])
 			if i["minlength"].isdigit():
@@ -67,6 +70,6 @@ class madlibCall(object):
 			return json.dumps(new_data[randomIndex], indent=4)	# Send data
 		else:
 			return json.dumps({"error": "Invalid API call"})
-       
+
 if __name__ == "__main__":
 	app.run()
