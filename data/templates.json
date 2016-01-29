@@ -38,6 +38,16 @@
                         " pirate phrases such as \"Ahoy there, ", ",\"\"Avast, ye ", ",\" and \"Shiver me ", ".\" Remember to drop all yer gs when ye say such words as sailin', spittin', and fightin'. This will give ye a/an ",
                         " start to being recognized as a swashbucklin' ", ". Once ye have the lingo down pat, it helps to wear a three-cornered ", " on yer head, stash a/an ", 
                         " in yer pants, and keep a/an ", " perched atop yer ", ". Aye, now ye be a real pirate!", 0]
+        },
+        {
+            "title": "How to Date the Coolest Guy/Girl in School",
+            "blanks": ["plural noun", "adverb", "verb", "article of clothing", "body part", "adjective", "noun", " plural noun", "anothe rbody part", "plural noun",
+                        "another body part", "noun", "noun", "verb ending in 'ing'", "adjective", "adjective", "verb"],
+            "value": ["It's simple. Turn the ", ". Make him/her want ", " to date you. Make sure you're always dressed to ", ". Each and every day, wear a/an ",
+                        " that you know shows off your ", " to ", " advantage and make your ", " look like a million ", ". Even if the two of you make meaningful ",
+                        " contact, don't admit it. No hugs or ", ". Just shake his/her ", " firmly. And remember, when he/she asks you out, even though a chill may run down your ",
+                        " and you can't stop your ", " from ", ", just play it ", ". Take a long pause before answering in a very ", " voice. \" I'll have to ", 
+                        " it over.\""]
         }
     ]
 }
