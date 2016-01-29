@@ -1,9 +1,7 @@
 # import modules
 import web
 import json
-import requests
 import random
-import SimpleHTTPServer
 
 # Set urls
 urls = (
@@ -29,10 +27,10 @@ class api(object):
 # /api/random route
 class madlibCall(object):
 	def GET(self, type):
+		# Set headers
+		web.header("Access-Control-Allow-Origin", "*") # Allow all access
+		web.header("Content-Type", "application/json") # Set content type
 		if (type == "random"):
-			# Set headers
-			web.header("Access-Control-Allow-Origin", "*") # Allow all access
-			web.header("Content-Type", "application/json") # Set content type
 			# Load json data
 			with open('data/templates.json') as data_file:
 				data = json.load(data_file)
