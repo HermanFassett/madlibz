@@ -28,6 +28,16 @@
                         ". The wolf knocked on the second pig's ", ". \"Let me in or I'll blow your ", " down!\" The pig didn't, so the wolf ", 
                         " down the house. Then the wolf knocked on the third ", " pig's door. \"Let me in or I'll blow your house down!\" The little pig didn't so the wolf ",
                         " and ", ". He could not blow the house down. All the pigs went to live in the ", " house and they all ", " happily ever after.", 0]
+        },
+        {
+            "title": "Talk Like a Pirate",
+            "blanks": ["noun", "adjective", "verb", "adverb", "noun", "adjective", "plural noun", "plural noun", "plural noun", "part of the body", "noun",
+                        "noun", "noun", "part of the body"],
+            "value": ["Ye can always pretend to be a bloodthirsty ", ", threatening everyone by waving yer ", " sword in the air, but until ye learn to ",
+                        " like a pirate, ye'll never be ", " accepted as an authentic ", ". So here's what ye do: Cleverly work into yer daily conversations ",
+                        " pirate phrases such as \"Ahoy there, ", ",\"\"Avast, ye ", ",\" and \"Shiver me ", ".\" Remember to drop all yer gs when ye say such words as sailin', spittin', and fightin'. This will give ye a/an ",
+                        " start to being recognized as a swashbucklin' ", ". Once ye have the lingo down pat, it helps to wear a three-cornered ", " on yer head, stash a/an ", 
+                        " in yer pants, and keep a/an ", " perched atop yer ", ". Aye, now ye be a real pirate!", 0]
         }
     ]
 }
