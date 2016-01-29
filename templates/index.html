@@ -29,7 +29,7 @@ $else:
                     if (b !== "") {
                         html += "<div class='input-group'> <span class='input-group-addon'>" + b.charAt(0).toUpperCase() + b.slice(1) + "</span>" +
                             "<input class='form-control' type='text' name='b" + i + "' placeholder='Enter ";
-                        if (b.substr(0,2).match(/[aeiou][^\s]/)) {
+                        if (b.substr(0,2).match(/[aeiou][^\sn]/)) {
                             html += "an ";
                         }
                         else if (!b.substr(0,2).match(/[aeiou]\s/)) {
