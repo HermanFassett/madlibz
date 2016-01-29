@@ -19,13 +19,20 @@ $else:
                var html = "<form method='post'><input name='title' type='hidden' value='" + madlibs.title.toString().replace("'", "&#39;") + "'/>";
 
                for (var i = 0; i < madlibs.value.length - 1; i++) {
-                   var v = madlibs.value[i].toString();
-                   var b = (madlibs.blanks[i]) ? madlibs.blanks[i].toString() : "";
-                   html += "<input type='hidden' value='"+ v.replace("'", "&#39;") + "' name='v" + i + "'/>" +
-                    (b !== "" ? "<div class='input-group'> <span class='input-group-addon'>" + b.charAt(0).toUpperCase() + b.slice(1) +
-                      "</span>" +
-                      "<input class='form-control' type='text' name='b" + i + "' placeholder='Enter " +
-                      (b.substr(0,2).match(/[aeiou]\s/) ? "" : b.substr(0,2).match(/[aeiou][^\s]/) ? "an " : "a ") + b.replace("'", "&#39;") + "'/></div>" : "");
+                    var v = madlibs.value[i].toString();
+                    var b = (madlibs.blanks[i]) ? madlibs.blanks[i].toString() : "";
+                    html += "<input type='hidden' value='"+ v.replace(/\'/gi, "&#39;") + "' name='v" + i + "'/>";
+                    if (b !== "") {
+                        html += "<div class='input-group'> <span class='input-group-addon'>" + b.charAt(0).toUpperCase() + b.slice(1) + "</span>" +
+                            "<input class='form-control' type='text' name='b" + i + "' placeholder='Enter ";
+                        if (b.substr(0,2).match(/[aeiou][^\s]/)) {
+                            html += "an ";
+                        }
+                        else if (!b.substr(0,2).match(/[aeiou]\s/)) {
+                            html += "a ";
+                        }
+                        html +=  b.replace("'", "&#39;") + "'/></div>";
+                    }
                }
                html += "<br/><input type='submit' class='btn btn-primary' value='Submit'/></submit>";
                jQuery("#game").html(html);
