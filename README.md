@@ -1,6 +1,6 @@
-#Madlibz API
+# Madlibz API
 A madlibs api for random madlibs templates
-##Get a Random Madlib Template
+## Get a Random Madlib Template
 The base url to get a random madlib template, is as follows:<br>
 ```
 http://madlibz.herokuapp.com/api/random
@@ -27,7 +27,8 @@ The url query options are as follows:
     	</tr>
   </tbody>
 </table>
-#Get a Random Verb
+
+# Get a Random Verb
 Here is an example call:
 ```
 http://madlibz.herokuapp.com/api/random?minlength=5&maxlength=25
