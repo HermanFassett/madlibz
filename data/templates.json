@@ -3,7 +3,7 @@
         {
             "title": "Hello ____!",
             "blanks": ["noun"],
-            "value": ["Hello,", 0]
+            "value": ["Hello, ", 0]
         },
         {
             "title": "How To Cross a Piranha-Infested River",
