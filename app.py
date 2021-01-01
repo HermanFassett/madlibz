@@ -59,7 +59,7 @@ class madlibCall(object):
 				minlength = int(i["minlength"])
 			if maxlength < minlength: # Can't have min greater than max!
 				maxlength, minlength = minlength, maxlength # Swap variables
-			print minlength, maxlength
+			print (minlength, maxlength)
 			# Filter the data based on length
 			new_data = [elem for elem in data["templates"] if (len(elem["blanks"]) <= maxlength and len(elem["blanks"]) >= minlength)]
 			# Check if elements exist
