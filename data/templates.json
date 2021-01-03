@@ -58,11 +58,19 @@
                       "  ran over to get in the long line that had about ", " people in it. when I finally got on the roller coaster I was ", 
                       ". In fact, I was so nervous my two knees were knocing together. This was the ", " ride I had ever been on! In about two minutes I heard the crank and grinding of the gears. Thats when the ride began! When I got to the bottom, I was a little ", 
                       " but I was proud of myself. The rest of. the day went ", ". It was a ", " day at the fun park.", 0]
-        }               
+        },
+        {
+            "title": "A Spooky Campfire Story",
+            "blanks": ["adjective", "adjective", "number", "adjective", "animal", "noun", "animal", "name", "verb", "adjective", "adjective"],
+            "value": ["Every summer, I get totally amped and ", " to go camping in the deep, ", " forests. It's good to get away from it all - but not too far, like getting lost! Last year, my friend and I went hiking and got lost for ", 
+                      " hour(s). We started off on a(n) ", " adventure, but we kept losing the trail. Night began to fall, and when we heard the howls of a ", 
+                     ", we began to panic. It was getting darker and our flashlights were running on ", ". I'm sure glad my pet ", ", ", ", was with us. He is one gifted creature, because he was able to guide us back by ",
+                     " the ", " s'mores by the campfire. This year, before setting off on an ", " journey, I'll be sure to have working flashlights - and of course, my gifted pet!", 0]
+        },
         {
             "title": "Weird News",
-            "blanks": ["noun", "place", "verb ending in ing", "noun", "name", "verb", "noun", "verb", "noun", "part of body", "type of liquid", "place", " past tense verb ", "foreign country", "verb", "noun", "past tense verb", "adjective", "verb", "noun", "plural noun", ],
-            "value": ["A ", "in ", "was arrested this morning after he was caught", "in front of ", ". ", "had a history of ", ", but no one-not even his ", "-ever imagined he'd ", " with a ", " stuck in his ", ". After drinking a ", ", cops followed him to a ", "where he reportedly  ", "in the fry machine. Later, a woman from ", " was charged with a similar crime. But rather than ", "with a ", ", she ", "with a ", "dog. Either way, we imagine that after witnessing him ", "with a ", "there are probably a whole lot of ", "that are giong to need some therapy!", 0]
-        }           
+            "blanks": ["noun", "place", "verb ending in ing", "noun", "name", "verb", "noun", "verb", "noun", "part of body", "type of liquid", "place", " past tense verb ", "foreign country", "verb", "noun", "past tense verb", "adjective", "verb", "noun", "plural noun"],
+            "value": ["A ", " in ", " was arrested this morning after he was caught ", " in front of ", ". ", " had a history of ", ", but no one-not even his ", "-ever imagined he'd ", " with a ", " stuck in his ", ". After drinking a ", ", cops followed him to a ", " where he reportedly  ", "in the fry machine. Later, a woman from ", " was charged with a similar crime. But rather than ", "with a ", ", she ", "with a ", " dog. Either way, we imagine that after witnessing him ", " with a ", " there are probably a whole lot of ", " that are going to need some therapy!", 0]
+        }      
     ]
 }
