@@ -66,6 +66,11 @@
                       " hour(s). We started off on a(n) ", " adventure, but we kept losing the trail. Night began to fall, and when we heard the howls of a ", 
                      ", we began to panic. It was getting darker and our flashlights were running on ", ". I'm sure glad my pet ", ", ", ", was with us. He is one gifted creature, because he was able to guide us back by ",
                      " the ", " s'mores by the campfire. This year, before setting off on an ", " journey, I'll be sure to have working flashlights - and of course, my gifted pet!", 0]
-        }
+        },
+        {
+            "title": "Weird News",
+            "blanks": ["noun", "place", "verb ending in ing", "noun", "name", "verb", "noun", "verb", "noun", "part of body", "type of liquid", "place", " past tense verb ", "foreign country", "verb", "noun", "past tense verb", "adjective", "verb", "noun", "plural noun"],
+            "value": ["A ", " in ", " was arrested this morning after he was caught ", " in front of ", ". ", " had a history of ", ", but no one-not even his ", "-ever imagined he'd ", " with a ", " stuck in his ", ". After drinking a ", ", cops followed him to a ", " where he reportedly  ", "in the fry machine. Later, a woman from ", " was charged with a similar crime. But rather than ", "with a ", ", she ", "with a ", " dog. Either way, we imagine that after witnessing him ", " with a ", " there are probably a whole lot of ", " that are going to need some therapy!", 0]
+        }      
     ]
 }
