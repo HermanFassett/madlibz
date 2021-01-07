@@ -24,7 +24,7 @@ class index(object):
 		form = web.input()
 		output = ""
 		title = form["title"]
-		for i in range(0, len(form)/2):
+		for i in range(0, len(form)//2):
 			v = "v" + str(i) if "v" + str(i) in form else ""
 			b = "b" + str(i)
 			if v in form:
