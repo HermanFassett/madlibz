@@ -128,13 +128,40 @@
                        " and ", " instead of video games. Also, before cars were invented, people actually rode ", "! People read ", " instead of computers and tablets, and sent messages via ", 
                        " that took ", " days to arrive. I wonder how kids will view my life in ", " year(s); maybe they will ride flying cars to school and play with ", " and ", " ", "!", 0]
         },
-         {
+        {
              "title": "Star Wars",
              "blanks": ["adjective", "noun", "adjective", "noun; place", "adjective", "adjective", "adjective", "adjective", "plural noun", "adjective", "plural noun", "plural noun", "adjective", 
                         "noun", "verb", "adjective", "verb", "plural noun; type of job", "adjective", "verb", "adjective"],
              "value": ["Star Wars is a ", " ", " of ", " versus evil in a ", " far far away. There are ", " battles between ", "ships in ", " space and ", " duels with ", " called ", 
                        " sabers. ", " called \"droids\" are helpers and ", " to the heroes. A ", " power called The ", " ", "s people to do ", " things, like ", " ", " use The Force for the ", 
                        " side and the Sith ", " it for the ", " side.", 0]
+        },
+        {
+            "title":"Vacations",
+            "blanks": ["adjective", "adjective", "noun", "noun", "plural noun", "game", "plural noun", "verb ending in 'ing'", "ver ending in 'ing'", "plural noun", "verb ending in 'ing'", "noun",
+                       "plant", "part of the body", "a place", "verb ending in 'ing'", "adjective", "number", "plural noun"],
+            "value": [ "A vacation is when you take a trip to some ", " place with your ", " family. Usually you go to some place that is a/an ", " or up on a/an ", 
+                       ". A good vacation place is one where you can ride ", " or play ", " or go hunting for ", ". I like to spend my time ", " or ", ". When parents go on a vacation, they spend their time eating three ",
+                       " a day, and fathers play golf, and mothers sit around ", ". Last summer, my little brother fell in a/an ", " and got poison ", " all over his ",
+                       ". My family is going to go to (the) ", ", and I will practice ", ". Parents need vacations more than kids because parents are always very ", " and because they have to work ",
+                       " hours every day all year maing enough ", " to pay for the vacation."]
+        },
+        {
+            "title": "Internet Inspiration",
+            "blanks": [ "adjective", "noun", "noun", "adjective", "verb", "part of the body", "plural noun", "a place", "noun", "number", "adjective", "adjective", "noun", "adjective", "verb", "noun"],
+            "value": [ "Whether chipping away at a/an ", "statue or stiching a patwork ", ", crafting is always a labor of ", ". But sometimes the most ",
+                       " part of producing art is deciding what to ", " next! Luckily, the Internet can lend a helping ", ". There are plenty of mood boards and photo ",
+                       " online to consult for inspiration. It doesn't matter if you're redesigning (the) ", ", painting a/an ", ", or hosting a differ party for ",
+                       ", the Internet will have plenty of ", " advice. And if you're feeling ", ", you can create your own ", " board and inspire dozens of followers with your ",
+                       " designs. With an infinite number of new projects to ", ", the only challenge will be finding the ", " to complete them all!"]
+        },
+        {
+            "title": "Basketball Playoffs",
+            "blanks": [ "person in room", "noun", "adjective", "verb (past tense)", "plural noun", "plural noun", "number", "adjective", "adjective", "noun", "exclamation", "noun",
+                        "another person in room", "noun", "noun", "number", "noun", "noun", "noun"],
+            "value": [ "Hi! This is ", ", speaking to you from the broadcasting ", " at the ", " stadium! In case you ", " in late, the score between the Los Angeles ", " and the Boston ", " is a squeaker, 141 to ",
+                       ". This has been the most ", " game these ", " eyes have seen in yers. First, one team scores a ", ", then ", "! - the other team comes right back. Okay. Time-out is over.Los Angelesbrings in the ball at mid-",
+                       ". ", " dribbles down the ", ", fakes the defender out of his ", " and shoots a ", "-handed shot.It goes right through the ", ". He beat the ", "! The game is over as the ", " goes off."]
         }
     ]
 }
